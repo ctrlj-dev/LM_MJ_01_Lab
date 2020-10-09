@@ -1,0 +1,56 @@
+/*==VARIABLES==*/
+
+$redColor : red;
+$blueColor : blue;
+$greenColor : green;
+
+/*==MIXIN==*/
+
+@mixin box($color) {    
+    .base-color {
+        background-color: $color;
+        color: white;
+    }
+    @for $i from 1 through 4 {
+        .darken-#{$i} {
+            background-color: darken($color, $amount: 7 * $i);
+            color: darken(#dadada, $amount: 7 * $i);
+        }
+
+        .lighten-#{$i} {
+            background-color: lighten($color, $amount: 7 * $i);
+            color: lighten(#dadada, $amount: 7 * $i);
+        }
+    }
+}
+
+/*==CONTENIDO==*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    .box {
+        flex: 0 0 10%;
+        width: 10%;
+        padding: 15px 0;
+        border-radius: 5px;
+        text-align: center;
+        &.base-color {
+            flex: 0 0 12%;
+            width: 12%;
+        }
+    }    
+    &.container-1 {
+        @include box($redColor)
+    }
+
+    &.container-2 {
+        @include box($blueColor)
+    }
+
+    &.container-3 {
+        @include box($greenColor)
+    }   
+}

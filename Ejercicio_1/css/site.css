@@ -1,1 +1,167 @@
-/* No CSS *//*# sourceMappingURL=site.css.map */
+/*==VARIABLES==*/
+/*==MIXIN==*/
+/*==CONTENIDO==*/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.container .box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  width: 10%;
+  padding: 15px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .box.base-color {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12%;
+          flex: 0 0 12%;
+  width: 12%;
+}
+
+.container.container-1 .base-color {
+  background-color: red;
+  color: white;
+}
+
+.container.container-1 .darken-1 {
+  background-color: #db0000;
+  color: #c8c8c8;
+}
+
+.container.container-1 .lighten-1 {
+  background-color: #ff2424;
+  color: #ececec;
+}
+
+.container.container-1 .darken-2 {
+  background-color: #b80000;
+  color: #b6b6b6;
+}
+
+.container.container-1 .lighten-2 {
+  background-color: #ff4747;
+  color: #fefefe;
+}
+
+.container.container-1 .darken-3 {
+  background-color: #940000;
+  color: #a4a4a4;
+}
+
+.container.container-1 .lighten-3 {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.container.container-1 .darken-4 {
+  background-color: #700000;
+  color: #939393;
+}
+
+.container.container-1 .lighten-4 {
+  background-color: #ff8f8f;
+  color: white;
+}
+
+.container.container-2 .base-color {
+  background-color: blue;
+  color: white;
+}
+
+.container.container-2 .darken-1 {
+  background-color: #0000db;
+  color: #c8c8c8;
+}
+
+.container.container-2 .lighten-1 {
+  background-color: #2424ff;
+  color: #ececec;
+}
+
+.container.container-2 .darken-2 {
+  background-color: #0000b8;
+  color: #b6b6b6;
+}
+
+.container.container-2 .lighten-2 {
+  background-color: #4747ff;
+  color: #fefefe;
+}
+
+.container.container-2 .darken-3 {
+  background-color: #000094;
+  color: #a4a4a4;
+}
+
+.container.container-2 .lighten-3 {
+  background-color: #6b6bff;
+  color: white;
+}
+
+.container.container-2 .darken-4 {
+  background-color: #000070;
+  color: #939393;
+}
+
+.container.container-2 .lighten-4 {
+  background-color: #8f8fff;
+  color: white;
+}
+
+.container.container-3 .base-color {
+  background-color: green;
+  color: white;
+}
+
+.container.container-3 .darken-1 {
+  background-color: #005c00;
+  color: #c8c8c8;
+}
+
+.container.container-3 .lighten-1 {
+  background-color: #00a400;
+  color: #ececec;
+}
+
+.container.container-3 .darken-2 {
+  background-color: #003900;
+  color: #b6b6b6;
+}
+
+.container.container-3 .lighten-2 {
+  background-color: #00c700;
+  color: #fefefe;
+}
+
+.container.container-3 .darken-3 {
+  background-color: #001500;
+  color: #a4a4a4;
+}
+
+.container.container-3 .lighten-3 {
+  background-color: #00eb00;
+  color: white;
+}
+
+.container.container-3 .darken-4 {
+  background-color: black;
+  color: #939393;
+}
+
+.container.container-3 .lighten-4 {
+  background-color: #10ff10;
+  color: white;
+}
+/*# sourceMappingURL=site.css.map */
