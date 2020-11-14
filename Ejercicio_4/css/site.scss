@@ -4,7 +4,7 @@
 $mainFont: 'Space Mono', monospace;
 
 // colors
-$darkBlack:#000000;
+$darkBlack:#1D1A18;
 $modernRed: #DE3D43;
 $lightBlack: #1D1A18;
 
@@ -60,6 +60,9 @@ a {
 
         .card--publish {
             justify-self: right;
+            .card--pulish-link {
+                font-style: italic;
+            }
         }
 
     }
@@ -70,6 +73,7 @@ a {
         color: $lightBlack;
         padding: 15px;
         background-color: transparent;
+        font-size: 1.2rem;
     }
 }
 
