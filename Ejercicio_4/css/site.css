@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #000000;
+  color: #1D1A18;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.container {
+  max-width: 90%;
+  margin: 30px auto;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 350px auto;
+      grid-template-rows: 350px auto;
+  grid-gap: 15px;
+  background-color: #DE3D43;
+}
+
+.card .card--content {
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 15px;
+  display: -ms-grid;
+  display: grid;
+  padding: 0 15px;
+}
+
+.card .card--content .card--publish {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.card .card--button {
+  border: none;
+  border-top: 2px solid;
+  cursor: pointer;
+  color: #1D1A18;
+  padding: 15px;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .row {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .row {
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+/*# sourceMappingURL=site.css.map */
